@@ -52,8 +52,8 @@
       </ul>
     </div>
     <h4>Drivers are waiting for you</h4>
-    <button class="book-now">Book now</button>
-    <button class="contact-us">Contact us</button>
+    <button class="button book-now">Book now</button>
+    <button class="button contact-us">Contact us</button>
     <div class="branches">Retail, Food & Ecommerce</div>
     <div class="text-wrapper">
       <span>Over 30,000 drivers available across the UK</span>
@@ -103,7 +103,31 @@
   <h6>Get Real Time Locations Of Our Drivers with Accurate Pick-up Times & Prices</h6>
 </section>
 
-<section id="map"></section>
+<section class="map-network">
+  <div id="mapNetwork"></div>
+  <div class="container">
+    <div class="counter">
+      <ul>
+        <li>3</li>
+        <li>7</li>
+        <li>3</li>
+        <li>0</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="statistics">
+      <h3>Drivers are waiting for you</h3>
+      <ul>
+        <li>Average delivery Time<span> 17 minutes</span></li>
+        <li>Average Pick up time<span> 6 minutes</span></li>
+        <li>Average delivery Cost<span> £6.80</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="book-delivery container">
+    <button class="button">Book delivery</button>
+  </div>
+</section>
 
 <section class="tracker">
   <h5>track your order’s real time location here</h5>
@@ -112,19 +136,23 @@
 <section class="target-industries">
   <h3>Target Industries</h3>
   <h6>Plugin to our huge delivery network of and get instant delivery of your products</h6>
-  <ul>
-    <li>
-      <div class="img-wrapper"></div>
-      <div>Retail</div>
+  <div class="container">
+    <ul class="row">
+      <li class="col-sm-4">
+        <div class="img-wrapper"></div>
+        <div class="text-wrapper">
+          <div class="caption">Retail</div>
       <span>One Hour gives your customers the ability
 to order from you and have their goods
 within the hour. A simple plugin that gives
 your customers control of their delivery.
 Best of all we are available 24/7</span>
-    </li>
-    <li>
-      <div class="img-wrapper"></div>
-      <div>Food chains</div>
+        </div>
+      </li>
+      <li class="col-sm-4">
+        <div class="img-wrapper"></div>
+        <div class="text-wrapper">
+          <div class="caption">Food chains</div>
       <span>One Hour allows you access to the food
 delivery world instantly. Access a whole
 new customer base & revenue stream
@@ -132,22 +160,72 @@ with ease.  With the average pick up time
 under 6 minutes you can be guaranteed
 your customers will love the quick
 delivery service that One Hour gives.</span>
-    </li>
-    <li>
-      <div class="img-wrapper"></div>
-      <div>
-        Ecommerce
-      </div>
+        </div>
+      </li>
+      <li class="col-sm-4">
+        <div class="img-wrapper"></div>
+        <div class="text-wrapper">
+          <div class="caption">Ecommerce</div>
       <span>One Hour allows you to collect/deliver any
 kind of package anywhere in the country
 instantly. Parcels, Letters, Lost Keys,
 Forgotten Passports .. The list is endless!</span>
-    </li>
-  </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
-<section id="contact-us"></section>
+<section id="contact-us" class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <form class="row" name="get-in-touch">
+        <div class="col-md-12">
+          <h3>Contact us</h3>
+          <h6>If you have any questions about an existing delivery or wish to discuss
+            working with One Hour then please fill out this form and one of our
+            team will get back to you.</h6>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="company" placeholder="your company" class="form-control">
+          <input type="email" name="email" placeholder="email" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="name" placeholder="your name" class="form-control">
+          <input type="text" name="phone" placeholder="phone number" class="form-control">
+        </div>
+        <div class="col-md-12"><textarea name="query" placeholder="what’s your query?" class="form-control"></textarea>
+        </div>
+        <div class="col-md-12"><input type="submit" class="button" value="send"></div>
+      </form>
+    </div>
+    <div class="col-md-5">
+      <div class="map" id="mapContact"></div>
+    </div>
+  </div>
+</section>
 
-<footer></footer>
+<footer>
+  <div class="container">
+    <div class="contacts">
+      <p class="email">craig@one-hour.co.uk</p>
+      <p class=address>68 Coach Road, Outwood, Wakefield, WF1 3ED</p>
+    </div>
+    <div class="reach clearfix">
+      <form action="#" name="subscribe" class="subscribe">
+        <input type="email" name="email">
+        <input type="submit" value="Subscribe" class="button">
+      </form>
+      <ul class="social">
+        <li class="fb"><a href=""></a></li>
+        <li class="instagram"><a href=""></a></li>
+        <li class="pinterest"><a href=""></a></li>
+        <li class="youtube"><a href=""></a></li>
+        <li class="twitter"><a href=""></a></li>
+      </ul>
+    </div>
+    <p class="company">© Onehour LLC</p>
+  </div>
+</footer>
 
 <!--<footer>-->
 <!--<div class="city" data-toggle="modal" data-target="#mapModal">-->
