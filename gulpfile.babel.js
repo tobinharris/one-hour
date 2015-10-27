@@ -17,7 +17,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: ['last 5 version', '> 1%']}))
+    .pipe($.autoprefixer({browsers: ['last 5 version', '> 1%', 'ie > 7', 'ff > 3.4']}))
     .pipe($.csscomb())
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
@@ -70,7 +70,7 @@ gulp.task('html', ['styles'], () => {
 
 gulp.task('images', ['svg'], () => {
   return gulp.src(['app/images/**/*.jpg', 'app/images/**/*.png'])
-    /*.pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))*/
+    .pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))
     .pipe(gulp.dest('dist/images'));
 });
 

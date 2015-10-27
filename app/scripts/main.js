@@ -31,13 +31,13 @@ $(function () {
     {lat: 51.538889, lng: -0.057552}
   ];
   markersNetwork.forEach(function (market) {
-  var markerNetwork = new google.maps.Marker({
-    map: mapNetwork,
-    animation: google.maps.Animation.DROP,
-    position: market,
-    icon: 'images/markerMap.png'
+    var markerNetwork = new google.maps.Marker({
+      map: mapNetwork,
+      animation: google.maps.Animation.DROP,
+      position: market,
+      icon: 'images/markerMap.png'
+    });
   });
-})
 
   var mapContact = new google.maps.Map(document.getElementById('mapContact'), {
     center: new google.maps.LatLng(53.710215, -1.495679),
@@ -52,25 +52,8 @@ $(function () {
   var markerContact = new google.maps.Marker({
     map: mapContact,
     animation: google.maps.Animation.DROP,
-    position: {lat: 53.710215, lng: -1.495679},
-    icon: icon
-  });
-
-  var service = new google.maps.places.PlacesService(mapContact);
-
-  service.getDetails({
-    placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
-  }, function (place, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      var marker = new google.maps.Marker({
-        map: mapContact,
-        position: place.geometry.location
-      });
-      google.maps.event.addListener(marker, 'click', function () {
-        infowindow.setContent(place.name);
-        infowindow.open(map, this);
-      });
-    }
+    position: {lat: 53.710212, lng: -1.495720},
+    icon: 'images/marker-contact.png'
   });
 
 });
