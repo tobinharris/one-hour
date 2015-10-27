@@ -44,6 +44,7 @@ $(function () {
     zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     streetViewControl: true,
+    scrollwheel: false,
     mapTypeControl: false,
     zoomControlOptions: {}
   });
@@ -52,8 +53,7 @@ $(function () {
     map: mapContact,
     animation: google.maps.Animation.DROP,
     position: {lat: 53.710215, lng: -1.495679},
-    title: 'Dnipropetrovsk',
-    icon: 'images/markerMap.png'
+    icon: icon
   });
 
   var service = new google.maps.places.PlacesService(mapContact);
