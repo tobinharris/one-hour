@@ -49,7 +49,7 @@ gulp.task('html', ['styles'], () => {
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.uncss({
-      html: ['app/index.html']/*,
+      html: ['app/index.html'],
       ignore: [
         '.fade',
         '.fade.in',
@@ -59,9 +59,9 @@ gulp.task('html', ['styles'], () => {
         '.in',
         '.modal-backdrop',
         /modal/
-      ]*/
+      ]
     })))
-    .pipe($.if('*.css', $.minifyCss({compatibility: '*', keepSpecialComments: 0})))
+    .pipe($.if('*.css', $.minifyCss({compatibility: 'ie7', keepSpecialComments: 0})))
     .pipe($.if('*.css', $.bless()))
     .pipe(assets.restore())
     .pipe($.useref())

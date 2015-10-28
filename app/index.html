@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css" >
   <!-- endbuild -->
 
-  <!--[if lt IE 8]>
+  <!--[if lt IE 10]>
   <style type="text/css">
     li { display: inline !important; }
 
@@ -31,16 +31,16 @@
       background-image: url("images/hype-car.png");
     }
     .launching:before {
-      display: none;
+      display: none !important;
     }
     .target-industries li:first-child > .img-wrapper {
-      background: url("images/retail.png");
+      background-image: url("images/retail.png");
     }
     .target-industries li:first-child + li > .img-wrapper {
-      background: url("images/food-chains.png");
+      background-image: url("images/food-chains.png");
     }
     .target-industries li:first-child + li + li > .img-wrapper {
-      background: url("images/ecommerce.png");
+      background-image: url("images/ecommerce.png");
     }
   </style>
   <![endif]-->
@@ -239,7 +239,7 @@ Forgotten Passports .. The list is endless!</span>
   </div>
 </div>
 
-<footer>
+<footer class="footer">
   <div class="container">
     <div class="contacts">
       <p class="email">craig@one-hour.co.uk</p>
