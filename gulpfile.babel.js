@@ -49,7 +49,7 @@ gulp.task('html', ['styles'], () => {
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.uncss({
-      html: ['app/index.html'],
+      html: ['app/index.html']/*,
       ignore: [
         '.fade',
         '.fade.in',
@@ -59,9 +59,10 @@ gulp.task('html', ['styles'], () => {
         '.in',
         '.modal-backdrop',
         /modal/
-      ]
+      ]*/
     })))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*', keepSpecialComments: 0})))
+    .pipe($.if('*.css', $.bless()))
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
@@ -70,7 +71,7 @@ gulp.task('html', ['styles'], () => {
 
 gulp.task('images', ['svg'], () => {
   return gulp.src(['app/images/**/*.jpg', 'app/images/**/*.png'])
-    .pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))
+    /*.pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))*/
     .pipe(gulp.dest('dist/images'));
 });
 
