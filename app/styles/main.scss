@@ -559,9 +559,10 @@ textarea {
       width: 243px;
       height: 100%;
       border: 1px solid #eaeaea;
-      margin-right: 2px;
       color: $darkgrey;
       padding: 5px;
+      display: inline-block;
+      border-radius: 0;
     }
     input[type="submit"] {
       width: 133px;
@@ -774,7 +775,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .target-industries {
+    .text-wrapper .caption {
+      font-size: 32px;
+    }
+  }
+
   #contact-us {
     .right-fields {
       padding-left: 15px;
