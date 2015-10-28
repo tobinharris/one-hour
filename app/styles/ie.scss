@@ -43,24 +43,28 @@
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid transparent;
+
+  .container {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000,endColorstr=#55000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000); /* IE6 & 7 */
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+    padding: 25px 0 45px;
+    max-width: 800px;
+  }
 }
 
-.map-network .container {
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000,endColorstr=#55000000)"; /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000); /* IE6 & 7 */
-  position: static;
-  margin: 20px auto;
-  text-align: center;
-  padding: 25px 0 45px;
-  max-width: 800px;
-}
-
-#contact-us .left-fields {
-  padding-right: 15px;
-}
-
-#contact-us .right-fields {
-  padding-left: 15px;
+#contact-us {
+  .left-fields {
+    padding-right: 15px;
+  }
+  .right-fields {
+    padding-left: 15px;
+  }
+  .get-in-touch {
+    overflow: hidden;
+  }
 }
 
 .map-ie {
@@ -73,13 +77,12 @@
   display: block;
 }
 
-
 .footer {
   .reach {
     width: 50%;
   }
 
   .social {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
