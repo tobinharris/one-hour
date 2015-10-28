@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ONE HOUR</title>
 
   <!-- build:css styles/vendor.css -->
@@ -279,13 +280,17 @@ Forgotten Passports .. The list is endless!</span>
 <!--</script>-->
 
 <!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
-<script src="/bower_components/placeholders/dist/placeholders.js"></script>
-<!-- endbower -->
 <!-- endbuild -->
+
+<!--[if lt IE 9]>
+<!-- build:js scripts/ie.js -->
+<script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
+<script src="/bower_components/respond/dest/respond.min.js"></script>
+<script src="/bower_components/placeholders/dist/placeholders.js"></script>
+<!-- endbuild -->
+<![endif]-->
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
