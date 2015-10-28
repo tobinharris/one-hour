@@ -136,7 +136,7 @@ textarea {
     text-align: center;
   }
   li {
-    display: inline-block;
+    display: inline-block; *zoom: 1; *display: inline;
     font-size: 30px;
     line-height: 62px;
     margin-left: 5px;
@@ -239,7 +239,7 @@ textarea {
     text-align: center;
   }
   li {
-    display: inline-block;
+    display: inline-block; *zoom: 1; *display: inline;
     font-size: 16px;
     line-height: 43px;
     text-transform: capitalize;
@@ -261,7 +261,7 @@ textarea {
     text-align: center;
 
     li {
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
     }
   }
 
@@ -349,7 +349,7 @@ textarea {
 
     ul {
       font-weight: $normal;
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
     }
 
     .name {
@@ -410,7 +410,7 @@ textarea {
 
     li {
       padding-bottom: 10px;
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
       vertical-align: top;
     }
   }
@@ -526,7 +526,7 @@ footer {
 
   .contacts {
     float: left;
-    display: inline-block;
+    display: inline-block; *zoom: 1; *display: inline;
   }
 
   .email {
@@ -577,7 +577,7 @@ footer {
     font-size: 0;
 
     li {
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
       background-image: url(../images/sprite-social.png);
       width: 35px;
       height: 35px;
@@ -620,14 +620,14 @@ footer {
 
       & > img {
         float: none;
-        display: inline-block;
+        display: inline-block; *zoom: 1; *display: inline;
         vertical-align: middle;
       }
     }
 
     .name {
       float: none;
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
       margin-left: 10px;
       vertical-align: middle;
     }
@@ -684,7 +684,7 @@ footer {
 
     .contacts {
       float: none;
-      display: inline-block;
+      display: inline-block; *zoom: 1; *display: inline;
     }
 
     .company {
@@ -734,7 +734,7 @@ footer {
 
       ul {
         font-weight: $normal;
-        display: inline-block;
+        display: inline-block; *zoom: 1; *display: inline;
       }
 
       .name {
@@ -790,7 +790,7 @@ display: none;
 }
 .nav-item {
 float: none !important;
-display: inline-block;
+display: inline-block; *zoom: 1; *display: inline;
 width: 33%;
 text-align: center;
 padding: 0;

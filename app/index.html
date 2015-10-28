@@ -12,15 +12,15 @@
   <!-- endbower -->
   <!-- endbuild -->
 
-  <!--[if IE]>
-  <style type="text/css">
-    header, nav, section, article, aside, footer {  display: block; }
-  </style>
-  <![endif]-->
-
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" type="text/css" href="styles/main.css" >
   <!-- endbuild -->
+
+  <!--[if lt IE 8]>
+  <style type="text/css">
+    li { display: inline; }
+  </style>
+  <![endif]-->
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -29,7 +29,7 @@
 <![endif]-->
 
 <header class="header">
-  <section class="header-top">
+  <div class="header-top">
     <div class="container">
       <a href="#contact-us">contact us</a>
       <div class="logo clearfix">
@@ -40,8 +40,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="header-bottom container">
+  </div>
+  <div class="header-bottom container">
     <img src="images/header.jpg"
          style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
     <hgroup>
@@ -66,10 +66,10 @@
       Over 30,000 drivers available across the UK <span>|</span> Instant delivery in less than 60 minutes from just
       £5.00
     </div>
-  </section>
+  </div>
 </header>
 
-<section class="preferences">
+<div class="preferences">
   <ul>
     <li>Lower delivery price</li>
     <li>Largest delivery network</li>
@@ -77,9 +77,9 @@
     <li>Instant online tracking</li>
     <li>Integrated delivery system</li>
   </ul>
-</section>
+</div>
 
-<section class="hype">
+<div class="hype">
   <div class="container">
     <h3>what’s the hype?</h3>
     <article>One Hour have created the largest outsourced ‘Instant Delivery’ network in the UK allowing businesses &
@@ -103,14 +103,14 @@
         <span>Taxi/Private Hire</span></li>
     </ul>
   </div>
-</section>
+</div>
 
-<section class="network">
+<div class="network">
   <h3>Our delivery Network</h3>
   <h6>Get Real Time Locations Of Our Drivers with Accurate Pick-up Times & Prices</h6>
-</section>
+</div>
 
-<section class="map-network">
+<div class="map-network">
   <div id="mapNetwork"></div>
   <div class="container">
     <div class="counter">
@@ -139,13 +139,13 @@
   <div class="book-delivery container">
     <button class="button launching">Book delivery</button>
   </div>
-</section>
+</div>
 
-<section class="tracker">
+<div class="tracker">
   <h5>track your order’s real time location here</h5>
-</section>
+</div>
 
-<section class="target-industries">
+<div class="target-industries">
   <h3>Target Industries</h3>
   <h6>Plugin to our huge delivery network of and get instant delivery of your products</h6>
   <div class="container">
@@ -186,9 +186,9 @@ Forgotten Passports .. The list is endless!</span>
       </li>
     </ul>
   </div>
-</section>
+</div>
 
-<section id="contact-us">
+<div id="contact-us">
   <div class="container">
     <div class="row">
       <div class="col-md-7">
@@ -218,7 +218,7 @@ Forgotten Passports .. The list is endless!</span>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
   <div class="container">
