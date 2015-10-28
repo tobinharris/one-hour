@@ -9,16 +9,16 @@
 }
 
 .hype li:first-child > .img-wrapper {
-  background-image: url("images/hype-bike.png");
+  background-image: url("../images/hype-bike.png");
   background-position: 60% 50%;
 }
 
 .hype li:first-child + li > .img-wrapper {
-  background-image: url("images/hype-box.png");
+  background-image: url("../images/hype-box.png");
 }
 
 .hype li:first-child + li + li > .img-wrapper {
-  background-image: url("images/hype-car.png");
+  background-image: url("../images/hype-car.png");
 }
 
 #mapContact, #mapNetwork, .launching:before {
@@ -26,20 +26,20 @@
 }
 
 .target-industries li:first-child > .img-wrapper {
-  background-image: url("images/retail.png");
+  background-image: url("../images/retail.png");
 }
 
 .target-industries li:first-child + li > .img-wrapper {
-  background-image: url("images/food-chains.png");
+  background-image: url("../images/food-chains.png");
 }
 
 .target-industries li:first-child + li + li > .img-wrapper {
-  background-image: url("images/ecommerce.png");
+  background-image: url("../images/ecommerce.png");
 }
 
 .map-network {
   height: auto;
-  background-image: url(images/map-network.jpg);
+  background-image: url(../images/map-network.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid transparent;
@@ -64,11 +64,29 @@
 }
 
 .map-ie {
-  background-image: url(images/map-contact.jpg);
+  background-image: url(../images/map-contact.jpg);
   height: 440px;
   margin-top: 30px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 440px;
   display: block;
+}
+
+
+.footer {
+  .company {
+    color: $darkgrey;
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+  }
+
+  .reach {
+    width: 50%;
+  }
+
+  .social {
+    padding-top: 50px;
+  }
 }
