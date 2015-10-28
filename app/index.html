@@ -19,7 +19,9 @@
 
   <!--[if lt IE 10]>
   <style type="text/css">
-    * { zoom : 1 ; }
+    * {
+      zoom: 1;
+    }
 
     .hype li:first-child > .img-wrapper {
       background-image: url("images/hype-bike.png");
@@ -60,14 +62,18 @@
 
     .map-network .container {
       background-color: transparent;
-      background-image: url('images/opacity0.3.png');
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF); /* IE6 & 7 */
       position: static;
       margin: 20px auto;
       text-align: center;
       padding: 25px 0 45px;
       max-width: 800px;
+    }
+
+    .map-network .container .statistics,
+    .map-network .container .statistics ul > li {
+      color: #494242;
     }
 
     #contact-us .left-fields {
