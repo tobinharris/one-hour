@@ -103,6 +103,10 @@ textarea {
   transition: background .2s ease;
 }
 
+.map-ie, .map-network-ie {
+  display: none;
+}
+
 .launching {
   position: relative;
 

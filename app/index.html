@@ -32,7 +32,7 @@
       background-image: url("images/hype-car.png");
     }
 
-    .launching:before {
+    #mapContact, #mapNetwork, .launching:before {
       display: none !important;
     }
 
@@ -55,14 +55,12 @@
     .map-network .container {
       background-color: #232121;
       position: static;
-      margin: 20px auto 0;
+      margin: 20px auto;
       text-align: center;
       padding: 25px 0 45px;
       max-width: 800px;
-    }
-
-    #mapNetwork {
-      display: none;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+      filter: alpha(opacity=30);
     }
 
     #contact-us .left-fields {
@@ -73,17 +71,18 @@
       padding-left: 15px;
     }
 
-    #mapContact {
-      display: none;
-    }
-
-    .mapIE {
+    .map-ie {
       background-image: url(images/map-contact.jpg);
       height: 440px;
       margin-top: 30px;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 440px;
+    }
+    .map-network-ie {
+      background-image: url(images/map-network.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   </style>
   <![endif]-->
@@ -277,7 +276,7 @@ Forgotten Passports .. The list is endless!</span>
       </div>
       <div class="col-md-5">
         <div class="map" id="mapContact"></div>
-        <div class="mapIE"></div>
+        <div class="map-ie"></div>
       </div>
     </div>
   </div>
