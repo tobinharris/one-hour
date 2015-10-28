@@ -19,14 +19,33 @@
   <!--[if lt IE 8]>
   <style type="text/css">
     li { display: inline !important; }
+
+    .hype li:first-child > .img-wrapper {
+      background-image: url("images/hype-bike.png");
+      background-position: 60% 50%;
+    }
+    .hype li:first-child + li > .img-wrapper {
+      background-image: url("images/hype-box.png");
+    }
+    .hype li:first-child + li + li > .img-wrapper {
+      background-image: url("images/hype-car.png");
+    }
+    .launching:before {
+      display: none;
+    }
+    .target-industries li:first-child > .img-wrapper {
+      background: url("images/retail.png");
+    }
+    .target-industries li:first-child + li > .img-wrapper {
+      background: url("images/food-chains.png");
+    }
+    .target-industries li:first-child + li + li > .img-wrapper {
+      background: url("images/ecommerce.png");
+    }
   </style>
   <![endif]-->
 </head>
 <body>
-<!--[if lt IE 10]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <header class="header">
   <div class="header-top">
