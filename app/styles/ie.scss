@@ -62,8 +62,9 @@
   .right-fields {
     padding-left: 15px;
   }
-  .get-in-touch {
-    position: relative;
+  .get-in-touch textarea {
+    max-width: 400px;
+    width: 100%;
   }
 }
 
