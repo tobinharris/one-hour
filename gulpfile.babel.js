@@ -69,14 +69,14 @@ gulp.task('html', ['styles'], () => {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('images', ['svg'], () => {
+gulp.task('images', ['gif'], () => {
   return gulp.src(['app/images/**/*.jpg', 'app/images/**/*.png'])
-    .pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))
+    /*.pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))*/
     .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('svg', () => {
-  return gulp.src('app/images/**/*.svg')
+gulp.task('gif', () => {
+  return gulp.src('app/images/**/*.gif')
     .pipe(gulp.dest('dist/images'));
 });
 
