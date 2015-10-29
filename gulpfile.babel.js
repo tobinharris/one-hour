@@ -71,7 +71,7 @@ gulp.task('html', ['styles'], () => {
 
 gulp.task('images', ['gif'], () => {
   return gulp.src(['app/images/**/*.jpg', 'app/images/**/*.png'])
-    /*.pipe($.tinypng('ZKMKCHw5orM0pE1UBz13ziJ0E38pZGUm'))*/
+    /*.pipe($.tinypng('XXXXXXXXXXXXXXXXX'))*/ // <--- Put your https://tinypng.com/ key here
     .pipe(gulp.dest('dist/images'));
 });
 

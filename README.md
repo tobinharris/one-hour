@@ -17,3 +17,9 @@ For project building it`s used https://github.com/yeoman/generator-gulp-webapp.
 ## Google Analytics
 
   To add Google Analytics uncomment block in app/index.html file and change UA-XXXXXX-X to be your site's ID.
+
+
+## Hosting project on GitHub
+
+To host project please follow the instruction https://pages.github.com/
+Just need to clone this project to your repository and create gh-pages branch. Fire up a browser and go to http://username.github.io/repository.
