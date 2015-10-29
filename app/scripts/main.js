@@ -56,4 +56,31 @@ $(function () {
     icon: 'images/marker-contact.png'
   });
 
+
+
+  var amount = 0;
+  var speed = 100;
+
+  function doSetTimeout(a, s) {
+    speed = amount < 100 ? 100 : 10;
+
+    setTimeout(function () {
+      console.log(amount += speed);
+
+      if(amount < 37305) {
+        doSetTimeout(a, speed);
+      }
+
+    }, s);
+  }
+
+  doSetTimeout(amount, speed);
+
+
+function setDigit (element, digit) {
+
+}
+
+
+
 });
